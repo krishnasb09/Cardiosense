@@ -1,0 +1,17 @@
+{
+    "method": "rfe",
+    "n_features_selected": 10,
+    "selected_features": [
+        "num__age",
+        "num__chest_pain_type",
+        "num__cholesterol",
+        "num__fasting_blood_sugar",
+        "num__resting_ecg",
+        "num__exercise_angina",
+        "num__st_depression",
+        "num__st_slope",
+        "num__num_major_vessels",
+        "num__thalassemia"
+    ],
+    "total_features_before": 13
+}

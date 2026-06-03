@@ -1,0 +1,59 @@
+# -----------------------------
+# General Settings
+# -----------------------------
+random_state: 42
+test_size: 0.2
+scaling_method: standard   # Options: standard, minmax, robust
+
+# -----------------------------
+# Feature Selection
+# -----------------------------
+feature_selection_method: rfe  # Options: rfe, ensemble, boruta, beso
+
+# BESO (Bald Eagle Search Optimization) Parameters
+beso_params:
+  population_size: 10
+  max_iterations: 20
+
+# -----------------------------
+# Models to Train
+# -----------------------------
+models:
+  - logistic_regression
+  - random_forest
+  - xgboost
+
+# -----------------------------
+# Hyperparameter Tuning
+# -----------------------------
+hyperparameter_tuning: false  # True/False
+
+# -----------------------------
+# Primary Metric for Model Selection
+# -----------------------------
+primary_metric: roc_auc
+
+# -----------------------------
+# Paths
+# -----------------------------
+paths:
+  raw_data: "data/raw/"
+  processed_data: "data/processed/"
+  external_data: "data/external/"
+  trained_models: "models/trained_models/"
+  model_metadata: "models/model_metadata/"
+  feature_reports: "reports/feature_reports/"
+  explainability_reports: "reports/explainability_reports/"
+
+# -----------------------------
+# Preprocessing
+# -----------------------------
+preprocessing:
+  scaler_path: "models/trained_models/scaler.pkl"
+  encoder_path: "models/trained_models/encoder.pkl"
+
+# -----------------------------
+# Feature Selection Output
+# -----------------------------
+feature_selection:
+  selected_features_path: "reports/feature_reports/selected_features.json"

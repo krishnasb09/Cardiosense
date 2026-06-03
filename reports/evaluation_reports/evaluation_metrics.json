@@ -1,0 +1,56 @@
+{
+    "logistic_regression": {
+        "accuracy": 0.7585513078470825,
+        "precision": 0.7586206896551724,
+        "recall": 0.7764705882352941,
+        "f1": 0.7674418604651162,
+        "confusion_matrix": [
+            [
+                179,
+                63
+            ],
+            [
+                57,
+                198
+            ]
+        ],
+        "classification_report": "              precision    recall  f1-score   support\n\n           0       0.76      0.74      0.75       242\n           1       0.76      0.78      0.77       255\n\n    accuracy                           0.76       497\n   macro avg       0.76      0.76      0.76       497\nweighted avg       0.76      0.76      0.76       497\n",
+        "roc_auc": 0.8034516285853184
+    },
+    "random_forest": {
+        "accuracy": 0.9496981891348089,
+        "precision": 0.9457364341085271,
+        "recall": 0.9568627450980393,
+        "f1": 0.9512670565302145,
+        "confusion_matrix": [
+            [
+                228,
+                14
+            ],
+            [
+                11,
+                244
+            ]
+        ],
+        "classification_report": "              precision    recall  f1-score   support\n\n           0       0.95      0.94      0.95       242\n           1       0.95      0.96      0.95       255\n\n    accuracy                           0.95       497\n   macro avg       0.95      0.95      0.95       497\nweighted avg       0.95      0.95      0.95       497\n",
+        "roc_auc": 0.9874088478366554
+    },
+    "xgboost": {
+        "accuracy": 0.9496981891348089,
+        "precision": 0.9356060606060606,
+        "recall": 0.9686274509803922,
+        "f1": 0.9518304431599228,
+        "confusion_matrix": [
+            [
+                225,
+                17
+            ],
+            [
+                8,
+                247
+            ]
+        ],
+        "classification_report": "              precision    recall  f1-score   support\n\n           0       0.97      0.93      0.95       242\n           1       0.94      0.97      0.95       255\n\n    accuracy                           0.95       497\n   macro avg       0.95      0.95      0.95       497\nweighted avg       0.95      0.95      0.95       497\n",
+        "roc_auc": 0.9781315832117972
+    }
+}
