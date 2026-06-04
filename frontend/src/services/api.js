@@ -16,7 +16,7 @@ export function attachAuthToken(token) {
 }
 
 export async function predictCad(payload) {
-  const { data } = await api.post("/predict", payload);
+  const { data } = await api.post("/api/predict", payload);
   return data;
 }
 
