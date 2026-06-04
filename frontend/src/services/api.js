@@ -21,16 +21,16 @@ export async function predictCad(payload) {
 }
 
 export async function getAnalytics() {
-  const { data } = await api.get("/analytics");
+  const { data } = await api.get("/api/analytics");
   return data;
 }
 
 export async function getHistory(params = {}) {
-  const { data } = await api.get("/history", { params });
+  const { data } = await api.get("/api/history", { params });
   return data;
 }
 
 export async function downloadReport(payload) {
-  const { data } = await api.post("/reports/pdf", payload, { responseType: "blob" });
+  const { data } = await api.post("/api/reports/pdf", payload, { responseType: "blob" });
   return data;
 }
