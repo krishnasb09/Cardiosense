@@ -33,3 +33,4 @@ async def predict_cad(
     if inserted and inserted.get("id"):
         prediction.prediction_id = inserted["id"]
     return prediction
+print("PREDICTION ROUTE LOADED")
