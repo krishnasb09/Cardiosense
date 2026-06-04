@@ -16,21 +16,21 @@ export function attachAuthToken(token) {
 }
 
 export async function predictCad(payload) {
-  const { data } = await api.post("/api/predict", payload);
+  const { data } = await api.post("/predict", payload);
   return data;
 }
 
 export async function getAnalytics() {
-  const { data } = await api.get("/api/analytics");
+  const { data } = await api.get("/analytics");
   return data;
 }
 
 export async function getHistory(params = {}) {
-  const { data } = await api.get("/api/history", { params });
+  const { data } = await api.get("/history", { params });
   return data;
 }
 
 export async function downloadReport(payload) {
-  const { data } = await api.post("/api/reports/pdf", payload, { responseType: "blob" });
+  const { data } = await api.post("/reports/pdf", payload, { responseType: "blob" });
   return data;
 }
