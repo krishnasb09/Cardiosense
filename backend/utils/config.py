@@ -9,8 +9,7 @@ class Settings(BaseSettings):
     app_env: str = "development"
     api_host: str = "0.0.0.0"
     api_port: int = 8000
-    cors_origins_raw: str = "http://localhost:5173,http://127.0.0.1:5173"
-
+    cors_origins_raw: str = "http://localhost:5173,http://127.0.0.1:5173,https://cardiosense-topaz.vercel.app"
     supabase_url: Optional[str] = None
     supabase_anon_key: Optional[str] = None
     supabase_service_role_key: Optional[str] = None
