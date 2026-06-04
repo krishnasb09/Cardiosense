@@ -46,3 +46,33 @@ pip install -r requirements.txt
 ### 2. Run Pipelines
 - **Train Models**: `python src/pipeline/training_pipeline.py`
 - **Verify/Predict**: `python src/pipeline/testing_pipeline.py`
+
+
+CardioSense is an intelligent healthcare application designed to predict the risk of Coronary Artery Disease (CAD) using Machine Learning techniques. The system analyzes patient clinical parameters and provides accurate risk predictions along with explainable insights to support early diagnosis and preventive healthcare.
+
+Features
+
+CAD risk prediction using Machine Learning models
+Data preprocessing and feature engineering
+Class imbalance handling using SMOTE
+Model evaluation and performance comparison
+Explainable AI using SHAP analysis
+Interactive web interface for user-friendly predictions
+PDF report generation for prediction results
+
+
+Technologies Used
+
+
+Python
+Scikit-learn
+Pandas & NumPy
+XGBoost / LightGBM
+SHAP
+Streamlit
+Matplotlib & Seaborn
+Impact
+
+CardioSense aims to assist healthcare professionals and individuals by providing an accessible, data-driven tool for early cardiovascular risk assessment, helping support timely medical intervention and informed decision-making.
+
+This version sounds professional and is suitable for GitHub, internships, hackathons, and placement portfolios.
