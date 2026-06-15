@@ -48,6 +48,9 @@ app.include_router(reports.router, prefix="/api/reports", tags=["reports"])
 
 
 @app.get("/")
+@app.get("/health")
+def railway_health():
+    return {"status": "ok"}
 def root():
     return {
         "name": "CardioSense API",
